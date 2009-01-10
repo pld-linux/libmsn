@@ -16,7 +16,8 @@ Requires(pre,post):	/sbin/ldconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-MSN Library.
+Libmsn is a reusable, open-source, fully documented library for
+connecting to Microsoft's MSN Messenger service.
 
 %description -l pl.UTF-8
 Biblioteka MSN.
