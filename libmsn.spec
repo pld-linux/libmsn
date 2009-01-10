@@ -12,7 +12,6 @@ Source0:	http://dl.sourceforge.net/libmsn/%{name}-%{version}-%{_beta}.tar.bz2
 # Source0-md5:	e2088e987a44cef0b243b4adcb8c3825
 URL:		http://sourceforge.net/projects/libmsn/
 BuildRequires:	cmake
-Requires(pre,post):	/sbin/ldconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -20,7 +19,8 @@ Libmsn is a reusable, open-source, fully documented library for
 connecting to Microsoft's MSN Messenger service.
 
 %description -l pl.UTF-8
-Biblioteka MSN.
+libmsn to mająca otwarte źródła, w pełni udokumentowana
+biblioteka do łączenia się z usługą MSN Messenger Microsoftu.
 
 %package devel
 Summary:	Header files for MSN library
