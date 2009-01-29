@@ -1,17 +1,17 @@
-
-%define		_beta	beta2
-
+%define		subver	beta4
+%define		rel		1
 Summary:	MSN Library
 Summary(pl.UTF-8):	Biblioteka MSN
 Name:		libmsn
 Version:	4.0
-Release:	0.%{_beta}.1
+Release:	0.%{subver}.%{rel}
 License:	GPL
 Group:		Libraries
-Source0:	http://dl.sourceforge.net/libmsn/%{name}-%{version}-%{_beta}.tar.bz2
-# Source0-md5:	e2088e987a44cef0b243b4adcb8c3825
+Source0:	http://dl.sourceforge.net/libmsn/%{name}-%{version}-%{subver}.tar.bz2
+# Source0-md5:	b0155f01443644d7c4a60269e44d8dac
 URL:		http://sourceforge.net/projects/libmsn/
 BuildRequires:	cmake
+BuildRequires:	libstdc++-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -19,8 +19,8 @@ Libmsn is a reusable, open-source, fully documented library for
 connecting to Microsoft's MSN Messenger service.
 
 %description -l pl.UTF-8
-libmsn to mająca otwarte źródła, w pełni udokumentowana
-biblioteka do łączenia się z usługą MSN Messenger Microsoftu.
+libmsn to mająca otwarte źródła, w pełni udokumentowana biblioteka do
+łączenia się z usługą MSN Messenger Microsoftu.
 
 %package devel
 Summary:	Header files for MSN library
@@ -35,7 +35,7 @@ Header files for MSN library.
 Pliki nagłówkowe biblioteki MSN.
 
 %prep
-%setup -q -n %{name}-%{version}-%{_beta}
+%setup -q -n %{name}-%{version}-%{subver}
 
 %build
 install -d build
