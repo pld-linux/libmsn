@@ -12,6 +12,7 @@ Source0:	http://dl.sourceforge.net/libmsn/%{name}-%{version}-%{subver}.tar.bz2
 URL:		http://sourceforge.net/projects/libmsn/
 BuildRequires:	cmake
 BuildRequires:	libstdc++-devel
+BuildRequires:	openssl-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
