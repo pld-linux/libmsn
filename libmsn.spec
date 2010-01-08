@@ -1,14 +1,12 @@
-%define		subver	beta4
-%define		rel		1
 Summary:	MSN Library
 Summary(pl.UTF-8):	Biblioteka MSN
 Name:		libmsn
 Version:	4.0
-Release:	0.%{subver}.%{rel}
+Release:	1
 License:	GPL
 Group:		Libraries
-Source0:	http://dl.sourceforge.net/libmsn/%{name}-%{version}-%{subver}.tar.bz2
-# Source0-md5:	b0155f01443644d7c4a60269e44d8dac
+Source0:	http://dl.sourceforge.net/libmsn/%{name}-%{version}.tar.bz2
+# Source0-md5:	027442e7366dac7c365e8e57eabffc4a
 URL:		http://sourceforge.net/projects/libmsn/
 BuildRequires:	cmake
 BuildRequires:	libstdc++-devel
@@ -36,7 +34,7 @@ Header files for MSN library.
 Pliki nagłówkowe biblioteki MSN.
 
 %prep
-%setup -q -n %{name}-%{version}-%{subver}
+%setup -q
 
 %build
 install -d build
@@ -66,7 +64,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/msntest
-%attr(755,root,root) %ghost %{_libdir}/libmsn.so.0.1
+%attr(755,root,root) %ghost %{_libdir}/libmsn.so.0.2
 %attr(755,root,root) %{_libdir}/libmsn.so.*.*.*
 
 %files devel
