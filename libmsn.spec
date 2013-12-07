@@ -1,13 +1,13 @@
 Summary:	MSN Library
 Summary(pl.UTF-8):	Biblioteka MSN
 Name:		libmsn
-Version:	4.1
-Release:	2
+Version:	4.2.1
+Release:	1
 License:	GPL
 Group:		Libraries
-Source0:	http://dl.sourceforge.net/libmsn/%{name}-%{version}.tar.bz2
-# Source0-md5:	769d3cf0e5625263fbc23321c1ddfcb0
-Patch0:		%{name}-openssl.patch
+Source0:	http://download.sourceforge.net/libmsn/%{name}-%{version}.tar.bz2
+# Source0-md5:	38e46e589720eefd71f92b6b76993bf0
+Patch0:		c++.patch
 URL:		http://sourceforge.net/projects/libmsn/
 BuildRequires:	cmake
 BuildRequires:	libstdc++-devel
