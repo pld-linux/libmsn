@@ -2,7 +2,7 @@ Summary:	MSN Library
 Summary(pl.UTF-8):	Biblioteka MSN
 Name:		libmsn
 Version:	4.2.1
-Release:	2
+Release:	3
 License:	GPL
 Group:		Libraries
 Source0:	http://download.sourceforge.net/libmsn/%{name}-%{version}.tar.bz2
