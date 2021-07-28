@@ -1,0 +1,202 @@
+--- libmsn-4.2.1/doc/html/classMSN_1_1Connection.html.orig	2011-11-25 02:18:06.000000000 +0100
++++ libmsn-4.2.1/doc/html/classMSN_1_1Connection.html	2021-07-28 20:27:39.620507320 +0200
+@@ -99,8 +99,8 @@ Public Member Functions</h2></td></tr>
+ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isWholeLineAvailable</b> ()</td></tr>
+ <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a482344bda7622925b4711771284129f3"></a><!-- doxytag: member="MSN::Connection::bytesAvailable" ref="a482344bda7622925b4711771284129f3" args="()" -->
+ bool&#160;</td><td class="memItemRight" valign="bottom"><b>bytesAvailable</b> ()</td></tr>
+-<tr><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMSN_1_1Connection.html#a0bc6bd00cd64af64604b4387294773c5">write</a> (std::string s, bool log=true)  throw (std::runtime_error)</td></tr>
+-<tr><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMSN_1_1Connection.html#a7c2b26b200a77a2519a0275b6e16a63b">write</a> (std::ostringstream &amp;s, bool log=true)  throw (std::runtime_error)</td></tr>
++<tr><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMSN_1_1Connection.html#a0bc6bd00cd64af64604b4387294773c5">write</a> (std::string s, bool log=true)</td></tr>
++<tr><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMSN_1_1Connection.html#a7c2b26b200a77a2519a0275b6e16a63b">write</a> (std::ostringstream &amp;s, bool log=true)</td></tr>
+ <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMSN_1_1Connection.html#a1da51c085faedca2736477c68a1421d2">connect</a> (const std::string &amp;hostname, unsigned int port)=0</td></tr>
+ <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe2fbd899c9212ea25e605c4eba8ab0e"></a><!-- doxytag: member="MSN::Connection::disconnect" ref="afe2fbd899c9212ea25e605c4eba8ab0e" args="()=0" -->
+ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>disconnect</b> ()=0</td></tr>
+@@ -317,7 +317,7 @@ std::string&#160;</td><td class="memItem
+         <tr>
+           <td></td>
+           <td>)</td>
+-          <td></td><td>  throw (std::runtime_error)<code> [virtual]</code></td>
++          <td></td><td><code> [virtual]</code></td>
+         </tr>
+       </table>
+ </div>
+@@ -345,7 +345,7 @@ std::string&#160;</td><td class="memItem
+         <tr>
+           <td></td>
+           <td>)</td>
+-          <td></td><td>  throw (std::runtime_error)<code> [virtual]</code></td>
++          <td></td><td><code> [virtual]</code></td>
+         </tr>
+       </table>
+ </div>
+--- libmsn-4.2.1/doc/html/classMSN_1_1NotificationServerConnection.html.orig	2011-11-25 02:18:06.000000000 +0100
++++ libmsn-4.2.1/doc/html/classMSN_1_1NotificationServerConnection.html	2021-07-28 20:28:06.773693552 +0200
+@@ -162,7 +162,7 @@ void&#160;</td><td class="memItemRight"
+ <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMSN_1_1NotificationServerConnection.html#a09031345bf6653891548f1016b89fb4f">setState</a> (<a class="el" href="namespaceMSN.html#a124f7a5f9a2517ea576a4094d573e233">BuddyStatus</a> state, uint clientID)</td></tr>
+ <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMSN_1_1NotificationServerConnection.html#a6f3dcd47e1be6d51e457b92190a5f66c">setBLP</a> (char setting)</td></tr>
+ <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMSN_1_1NotificationServerConnection.html#ab81faa362489aa8fd9a60203ce514280">completeConnection</a> (std::map&lt; std::string, int &gt; &amp;allContacts, void *data)</td></tr>
+-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMSN_1_1NotificationServerConnection.html#a0cb1e43440aae0455dcec222fac163df">setFriendlyName</a> (std::string friendlyName, bool updateServer=false)  throw (std::runtime_error)</td></tr>
++<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMSN_1_1NotificationServerConnection.html#a0cb1e43440aae0455dcec222fac163df">setFriendlyName</a> (std::string friendlyName, bool updateServer=false)</td></tr>
+ <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMSN_1_1NotificationServerConnection.html#a983209fb70470d547d05b329702c4309">change_DisplayPicture</a> (std::string filename)</td></tr>
+ <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMSN_1_1NotificationServerConnection.html#a609181fb8c1d26a478be147aba4b5b9c">setPersonalStatus</a> (<a class="el" href="structMSN_1_1personalInfo.html">personalInfo</a> pInfo)</td></tr>
+ <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMSN_1_1NotificationServerConnection.html#a4aeaae7066f00496e6154b01b25f3655">addToList</a> (<a class="el" href="namespaceMSN.html#a1719d2bd92f2263c10e243d8b1621efe">MSN::ContactList</a> list, <a class="el" href="classMSN_1_1Passport.html">Passport</a> buddyName)</td></tr>
+@@ -879,7 +879,7 @@ void&#160;</td><td class="memItemRight"
+         <tr>
+           <td></td>
+           <td>)</td>
+-          <td></td><td>  throw (std::runtime_error)</td>
++          <td></td><td></td>
+         </tr>
+       </table>
+ </div>
+--- libmsn-4.2.1/doc/html/connection_8h_source.html.orig	2011-11-25 02:18:05.000000000 +0100
++++ libmsn-4.2.1/doc/html/connection_8h_source.html	2021-07-28 20:28:17.563635098 +0200
+@@ -129,9 +129,9 @@ var searchBox = new SearchBox("searchBox
+ <a name="l00091"></a>00091         <span class="keywordtype">bool</span> isWholeLineAvailable();
+ <a name="l00092"></a>00092         <span class="keywordtype">bool</span> bytesAvailable();
+ <a name="l00093"></a>00093         
+-<a name="l00097"></a>00097         <span class="keyword">virtual</span> <span class="keywordtype">size_t</span> write(std::string s, <span class="keywordtype">bool</span> log=<span class="keyword">true</span>) throw (std::runtime_error);
++<a name="l00097"></a>00097         <span class="keyword">virtual</span> <span class="keywordtype">size_t</span> write(std::string s, <span class="keywordtype">bool</span> log=<span class="keyword">true</span>);
+ <a name="l00098"></a>00098         
+-<a name="l00108"></a>00108         virtual <span class="keywordtype">size_t</span> write(std::ostringstream &amp; s, <span class="keywordtype">bool</span> log=true) throw (std::runtime_error);
++<a name="l00108"></a>00108         virtual <span class="keywordtype">size_t</span> write(std::ostringstream &amp; s, <span class="keywordtype">bool</span> log=true);
+ <a name="l00109"></a>00109                 
+ <a name="l00112"></a>00112         virtual <span class="keywordtype">void</span> connect(const std::<span class="keywordtype">string</span> &amp; hostname, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> port) = 0;
+ <a name="l00113"></a>00113         virtual <span class="keywordtype">void</span> disconnect() = 0;
+--- libmsn-4.2.1/doc/html/message_8h_source.html.orig	2011-11-25 02:18:05.000000000 +0100
++++ libmsn-4.2.1/doc/html/message_8h_source.html	2021-07-28 20:27:53.667097890 +0200
+@@ -216,7 +216,7 @@ var searchBox = new SearchBox("searchBox
+ <a name="l00203"></a>00203         <span class="keywordtype">bool</span> isRightAligned() <span class="keyword">const</span>;
+ <a name="l00204"></a>00204 
+ <a name="l00205"></a>00205 <span class="keyword">private</span>:
+-<a name="l00206"></a>00206         std::map&lt;std::string, std::string&gt; getFormatInfo() <span class="keyword">const</span> throw (std::runtime_error);
++<a name="l00206"></a>00206         std::map&lt;std::string, std::string&gt; getFormatInfo() <span class="keyword">const</span>;
+ <a name="l00207"></a>00207         <span class="keywordtype">void</span> setFormatInfo(std::map&lt;std::<span class="keywordtype">string</span>, std::<span class="keywordtype">string</span>&gt; &amp; info);
+ <a name="l00208"></a>00208     };
+ <a name="l00209"></a>00209     
+--- libmsn-4.2.1/doc/html/namespaceMSN.html.orig	2011-11-25 02:18:06.000000000 +0100
++++ libmsn-4.2.1/doc/html/namespaceMSN.html	2021-07-28 20:28:30.926896036 +0200
+@@ -220,7 +220,7 @@ std::string&#160;</td><td class="memItem
+ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>toStr</b> (int var)</td></tr>
+ <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab4e5bbdfbefed1fbdabe13d86eef3ae4"></a><!-- doxytag: member="MSN::unsignedToStr" ref="ab4e5bbdfbefed1fbdabe13d86eef3ae4" args="(unsigned int var)" -->
+ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>unsignedToStr</b> (unsigned int var)</td></tr>
+-<tr><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceMSN.html#a86017d102722d5a5bdd75abfdcff0b9a">decimalFromString</a> (const std::string &amp;s)  throw (std::logic_error)</td></tr>
++<tr><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceMSN.html#a86017d102722d5a5bdd75abfdcff0b9a">decimalFromString</a> (const std::string &amp;s)</td></tr>
+ <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a233dbc68826122919c1ba762f0affa1b"></a><!-- doxytag: member="MSN::hmac_sha" ref="a233dbc68826122919c1ba762f0affa1b" args="(std::string key, std::string message)" -->
+ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>hmac_sha</b> (std::string key, std::string message)</td></tr>
+ <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aad69f211e31151d41d239c608b7a8540"></a><!-- doxytag: member="MSN::derive_key" ref="aad69f211e31151d41d239c608b7a8540" args="(std::string key, std::string magic)" -->
+@@ -420,7 +420,7 @@ std::string&#160;</td><td class="memItem
+           <td>(</td>
+           <td class="paramtype">const std::string &amp;&#160;</td>
+           <td class="paramname"><em>s</em></td><td>)</td>
+-          <td>  throw (std::logic_error)</td>
++          <td></td>
+         </tr>
+       </table>
+ </div>
+--- libmsn-4.2.1/msn/connection.cpp.orig	2010-01-05 12:53:54.000000000 +0100
++++ libmsn-4.2.1/msn/connection.cpp	2021-07-28 20:25:48.184444354 +0200
+@@ -157,7 +157,7 @@ namespace MSN
+         }
+     }
+         
+-    size_t Connection::write(std::string s, bool log) throw (std::runtime_error)
++    size_t Connection::write(std::string s, bool log)
+     {
+         if(s.size() < 0)
+             return 0;
+@@ -179,7 +179,7 @@ namespace MSN
+         return s.size();
+     }
+     
+-    size_t Connection::write(std::ostringstream & ss, bool log) throw (std::runtime_error)
++    size_t Connection::write(std::ostringstream & ss, bool log)
+     {
+         std::string s = ss.str();
+ #ifdef DEBUG
+--- libmsn-4.2.1/msn/connection.h.orig	2008-12-18 01:38:36.000000000 +0100
++++ libmsn-4.2.1/msn/connection.h	2021-07-28 20:26:46.000797803 +0200
+@@ -94,7 +94,7 @@ public:
+         /** Write a string to the connection.
+          *
+          */
+-        virtual size_t write(std::string s, bool log=true) throw (std::runtime_error);
++        virtual size_t write(std::string s, bool log=true);
+         
+         /** Write the contents of a stringstream to the connection.
+          *    
+@@ -105,7 +105,7 @@ public:
+          * In this case, the data will be written as soon as a connection is 
+          * established.
+          */
+-        virtual size_t write(std::ostringstream & s, bool log=true) throw (std::runtime_error);
++        virtual size_t write(std::ostringstream & s, bool log=true);
+                 
+         /** Connect ourself to @a hostname on @a port.
+          */
+--- libmsn-4.2.1/msn/message.cpp.orig	2009-04-03 20:04:25.000000000 +0200
++++ libmsn-4.2.1/msn/message.cpp	2021-07-28 20:26:37.630843147 +0200
+@@ -52,7 +52,7 @@ namespace MSN
+         return this->rawContents;
+     }
+     
+-    std::map<std::string, std::string> Message::getFormatInfo() const throw (std::runtime_error)
++    std::map<std::string, std::string> Message::getFormatInfo() const
+     {
+         std::map<std::string, std::string> formatInfo;
+         std::string formatHeader = (*this)["X-MMS-IM-Format"];
+--- libmsn-4.2.1/msn/message.h.orig	2009-07-09 15:39:16.000000000 +0200
++++ libmsn-4.2.1/msn/message.h	2021-07-28 20:25:54.704409032 +0200
+@@ -203,7 +203,7 @@ public:
+         bool isRightAligned() const;
+ 
+ private:
+-        std::map<std::string, std::string> getFormatInfo() const throw (std::runtime_error);
++        std::map<std::string, std::string> getFormatInfo() const;
+         void setFormatInfo(std::map<std::string, std::string> & info);
+     };
+     
+--- libmsn-4.2.1/msn/notificationserver.cpp.orig	2010-01-19 19:05:10.000000000 +0100
++++ libmsn-4.2.1/msn/notificationserver.cpp	2021-07-28 20:26:24.234249056 +0200
+@@ -806,7 +806,7 @@ namespace MSN
+         }
+     }
+ 
+-    void NotificationServerConnection::setFriendlyName(std::string friendlyName, bool updateServer) throw (std::runtime_error)
++    void NotificationServerConnection::setFriendlyName(std::string friendlyName, bool updateServer)
+     {
+         this->assertConnectionStateIsAtLeast(NS_CONNECTED);
+         if(friendlyName.empty())
+--- libmsn-4.2.1/msn/notificationserver.h.orig	2009-07-22 22:09:36.000000000 +0200
++++ libmsn-4.2.1/msn/notificationserver.h	2021-07-28 20:26:29.737552575 +0200
+@@ -240,7 +240,7 @@ public:
+          *
+          *  @param  friendlyName  Maximum allowed length is 387 characters after URL-encoding.
+          */
+-        void setFriendlyName(std::string friendlyName, bool updateServer = false) throw (std::runtime_error);
++        void setFriendlyName(std::string friendlyName, bool updateServer = false);
+ 
+         /** Points to our display picture. It must be a png file, size: 96x96.
+          *  @param  filename  Path to the PNG file to be sent as avatar of this contact
+--- libmsn-4.2.1/msn/util.cpp.orig	2021-07-28 20:25:37.744500912 +0200
++++ libmsn-4.2.1/msn/util.cpp	2021-07-28 20:26:10.157658648 +0200
+@@ -161,7 +161,7 @@ namespace MSN
+         std::ostringstream tmp; tmp << var; return tmp.str();
+     } 
+ 
+-    unsigned int decimalFromString(const std::string & s) throw (std::logic_error)
++    unsigned int decimalFromString(const std::string & s)
+     {
+         unsigned int result = strtol(s.c_str(), NULL, 10);
+         errno = 0;
+--- libmsn-4.2.1/msn/util.h.orig	2009-07-22 22:09:36.000000000 +0200
++++ libmsn-4.2.1/msn/util.h	2021-07-28 20:25:59.947713960 +0200
+@@ -137,7 +137,7 @@ namespace MSN
+     std::string unsignedToStr(unsigned int var);
+     /** Convert a string, @a s, that contains decimal digits into an unsigned int.
+      */
+-    unsigned int decimalFromString(const std::string & s) throw (std::logic_error);
++    unsigned int decimalFromString(const std::string & s);
+ 
+     U32 _ucs2_utf8(U8 *dst, U8 *src, U32 nchar);
+     U32 _utf8_ucs2(U8 *dst, U8 *src);

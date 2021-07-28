@@ -2,17 +2,19 @@ Summary:	MSN Library
 Summary(pl.UTF-8):	Biblioteka MSN
 Name:		libmsn
 Version:	4.2.1
-Release:	6
-License:	GPL
+Release:	7
+License:	GPL v2+
 Group:		Libraries
 Source0:	http://download.sourceforge.net/libmsn/%{name}-%{version}.tar.bz2
 # Source0-md5:	38e46e589720eefd71f92b6b76993bf0
 Patch0:		c++.patch
 Patch1:		openssl.patch
-URL:		http://sourceforge.net/projects/libmsn/
-BuildRequires:	cmake
+Patch2:		%{name}-throw.patch
+URL:		https://sourceforge.net/projects/libmsn/
+BuildRequires:	cmake >= 2.6
 BuildRequires:	libstdc++-devel
 BuildRequires:	openssl-devel
+BuildRequires:	rpmbuild(macros) >= 1.605
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -39,22 +41,17 @@ Pliki nagłówkowe biblioteki MSN.
 %setup -q
 %patch0 -p1
 %patch1 -p1
+%patch2 -p1
 
 %build
 install -d build
 cd build
-%cmake \
-	-DCMAKE_INSTALL_PREFIX=%{_prefix} \
-%if "%{_lib}" == "lib64"
-	-DLIB_SUFFIX=64 \
-%endif
-	../
+%cmake ..
 
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_libdir}
 
 %{__make} -C build install \
 	DESTDIR=$RPM_BUILD_ROOT
@@ -68,8 +65,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/msntest
-%attr(755,root,root) %ghost %{_libdir}/libmsn.so.0.3
 %attr(755,root,root) %{_libdir}/libmsn.so.*.*.*
+%attr(755,root,root) %ghost %{_libdir}/libmsn.so.0.3
 
 %files devel
 %defattr(644,root,root,755)
